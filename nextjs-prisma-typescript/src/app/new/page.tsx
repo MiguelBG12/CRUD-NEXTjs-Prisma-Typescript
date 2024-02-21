@@ -6,4 +6,5 @@ import { useEffect } from 'react'
 
 function NewPage({ params }: { params: { id: string } }) {
 
- 
+  const { handleSubmit, register, setValue } = useForm();
+  
