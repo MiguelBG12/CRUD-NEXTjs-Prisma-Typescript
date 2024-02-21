@@ -6,3 +6,4 @@ export async function GET() {
     return NextResponse.json(tasks)
 }
 
+export async function POST(request: Request) {
