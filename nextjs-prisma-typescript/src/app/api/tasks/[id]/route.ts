@@ -28,4 +28,9 @@ export async function PUT(request: Request, { params }: Params) {
 }
 
 export async function DELETE(request: Request, { params }: Params) {
+    const task = await prisma.task.delete({
+        where: {
+            id: Number(params.id)
+        }
+    })
     
