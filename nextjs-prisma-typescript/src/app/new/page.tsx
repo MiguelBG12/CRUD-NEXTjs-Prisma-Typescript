@@ -72,4 +72,5 @@ function NewPage({ params }: { params: { id: string } }) {
             type= "button"
             className="bg-red-500 px-3 py-1 rounded-md text-while mt-2"
             onClick={async () => {
-              
+              if (confirm("Are you sure you want to delete this task?")) {
+                
