@@ -9,3 +9,16 @@ function Navbar() {
                 </h3>
             </Link>
             
+            <ul>
+                <li>                        
+                    <Link href="/new" className="text-slade-200 
+                    hover:text-slade-400">
+                        New
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    )
+}
+
+export default Navbar
