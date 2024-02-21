@@ -21,4 +21,8 @@ function NewPage({ params }: { params: { id: string } }) {
   const onSubmit = handleSubmit(async (data) => {
     if (params.id) {
       await axios.put(`/api/tasks/${params.id}`, data);
-    } 
+    } else {
+      await axios.post("/api/tasks", data);
+    }
+
+    
