@@ -34,4 +34,31 @@ function NewPage({ params }: { params: { id: string } }) {
     justify-center">
       <form onSubmit={onSubmit} className="w-1/4">
 
+        <h1 className="text-3xl font-bold">
+          {params.id ? "Update": "Create"} Task
+        </h1>
+
+        <label htmlFor="title" className="font-bold text-xs">
+          Write a title:
+        </label>
+        <input
+          id="title"
+          type="text"
+          placeholder="Write a title"
+          className="px-3 py-1 border border-gray-300 rounded-md shadow-sm
+                  focus:outline-none focus:ring-1 focus:ring-sky-300
+                  focus:border-sky-300 text-black block mb-2 w-full"
+          {...register("title")}
+        />
+        <label htmlFor="description" className="font-bold text-xs">
+          Write a description:
+        </label>
+        <textarea
+          id="description"
+          placeholder="Write a description"
+          className="px-3 py-1 border border-gray-300 rounded-md shadow-sm
+                  focus:outline-none focus:ring-1 focus:ring-sky-300
+                  focus:border-sky-300 text-black block w-full"
+          {...register("description")}
+        ></textarea>
         
