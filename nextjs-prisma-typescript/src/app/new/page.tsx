@@ -88,4 +88,4 @@ function NewPage({ params }: { params: { id: string } }) {
   )
 }
 
-
+export default NewPage;
