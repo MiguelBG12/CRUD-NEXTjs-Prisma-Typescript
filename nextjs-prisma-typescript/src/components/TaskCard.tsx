@@ -3,3 +3,7 @@
 import { Task } from "@prisma/client"
 import { useRouter } from "next/navigation";
 
+interface Props {
+    task: Task
+    }
+
