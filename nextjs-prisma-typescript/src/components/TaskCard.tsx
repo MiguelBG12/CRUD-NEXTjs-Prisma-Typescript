@@ -16,4 +16,4 @@ function TaskCard({ task }: Props) {
                 router.push(`/tasks/edit/${task.id}`)
             }}
         >
-        
+          <h3 className='font-bold text-xl'> {task.title}</h3>
