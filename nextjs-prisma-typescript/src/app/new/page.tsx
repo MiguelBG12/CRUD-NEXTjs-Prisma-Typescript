@@ -32,4 +32,6 @@ function NewPage({ params }: { params: { id: string } }) {
   return (
     <section className="h-[calc(100vh-rem)] flex items-center
     justify-center">
-      
+      <form onSubmit={onSubmit} className="w-1/4">
+
+        
