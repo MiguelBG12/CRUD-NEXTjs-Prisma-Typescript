@@ -18,3 +18,12 @@ export async function PUT(request: Request, { params }: Params) {
     const data = await request.json();
 
     const taskUpdated = await prisma.task.update({
+        where: {
+            id: Number(params.id),
+        },
+        data: data
+    });
+    
+    return NextResponse.json(taskUpdated)
+}
+
