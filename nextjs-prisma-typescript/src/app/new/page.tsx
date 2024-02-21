@@ -12,4 +12,5 @@ function NewPage({ params }: { params: { id: string } }) {
   useEffect(() => {
     if (params.id) {
       axios.get(`/api/tasks/${params.id}`).then(res => {
+        setValue('title', res.data.title);
         
