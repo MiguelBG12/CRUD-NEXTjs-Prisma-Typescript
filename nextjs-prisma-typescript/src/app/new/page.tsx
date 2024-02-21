@@ -29,4 +29,7 @@ function NewPage({ params }: { params: { id: string } }) {
     router.refresh();
   });
 
-  
+  return (
+    <section className="h-[calc(100vh-rem)] flex items-center
+    justify-center">
+      
