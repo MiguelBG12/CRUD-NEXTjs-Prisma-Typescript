@@ -16,4 +16,6 @@ function NewPage({ params }: { params: { id: string } }) {
         setValue('description', res.data.description);
       });
     }
-  }, 
+  }, [params.id, setValue]);
+
+  
