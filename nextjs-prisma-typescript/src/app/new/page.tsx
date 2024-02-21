@@ -26,4 +26,7 @@ function NewPage({ params }: { params: { id: string } }) {
     }
 
     router.push('/');
-    
+    router.refresh();
+  });
+
+  
