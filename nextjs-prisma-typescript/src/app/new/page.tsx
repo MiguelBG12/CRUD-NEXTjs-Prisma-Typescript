@@ -18,4 +18,5 @@ function NewPage({ params }: { params: { id: string } }) {
     }
   }, [params.id, setValue]);
 
-  
+  const onSubmit = handleSubmit(async (data) => {
+    
