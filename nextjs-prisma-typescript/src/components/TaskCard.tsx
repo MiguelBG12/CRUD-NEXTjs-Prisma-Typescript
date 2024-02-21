@@ -17,3 +17,8 @@ function TaskCard({ task }: Props) {
             }}
         >
           <h3 className='font-bold text-xl'> {task.title}</h3>
+          <p className='text slade-300'>{task.description}</p>
+        </div>
+    )
+}
+
