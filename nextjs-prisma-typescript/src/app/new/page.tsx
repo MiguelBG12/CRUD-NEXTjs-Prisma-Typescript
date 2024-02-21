@@ -74,4 +74,5 @@ function NewPage({ params }: { params: { id: string } }) {
             onClick={async () => {
               if (confirm("Are you sure you want to delete this task?")) {
                 await axios.delete(`/api/tasks/${params.id}`);
+                router.push('/');
                 
