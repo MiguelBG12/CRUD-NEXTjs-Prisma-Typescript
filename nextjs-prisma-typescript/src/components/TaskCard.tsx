@@ -7,3 +7,4 @@ interface Props {
     task: Task
     }
 
+function TaskCard({ task }: Props) {
