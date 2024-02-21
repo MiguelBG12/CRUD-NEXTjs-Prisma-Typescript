@@ -14,3 +14,5 @@ export async function GET(request: Request, { params }: Params) {
     return NextResponse.json(task);
 }
 
+export async function PUT(request: Request, { params }: Params) {
+    
