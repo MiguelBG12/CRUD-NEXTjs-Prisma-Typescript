@@ -10,4 +10,5 @@ function NewPage({ params }: { params: { id: string } }) {
   const router = useRouter();
 
   useEffect(() => {
-    
+    if (params.id) {
+      
