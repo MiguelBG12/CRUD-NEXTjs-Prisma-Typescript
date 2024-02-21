@@ -25,4 +25,5 @@ function NewPage({ params }: { params: { id: string } }) {
       await axios.post("/api/tasks", data);
     }
 
+    router.push('/');
     
