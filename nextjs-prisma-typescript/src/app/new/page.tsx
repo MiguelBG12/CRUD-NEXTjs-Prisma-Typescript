@@ -9,4 +9,5 @@ function NewPage({ params }: { params: { id: string } }) {
   const { handleSubmit, register, setValue } = useForm();
   const router = useRouter();
 
-  
+  useEffect(() => {
+    
