@@ -15,4 +15,6 @@ export async function GET(request: Request, { params }: Params) {
 }
 
 export async function PUT(request: Request, { params }: Params) {
+    const data = await request.json();
+
     
