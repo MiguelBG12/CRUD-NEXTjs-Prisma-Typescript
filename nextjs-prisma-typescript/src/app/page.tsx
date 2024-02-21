@@ -5,3 +5,4 @@ async function loadTasks() {
   return await prisma.task.findMany()
 }
 
+async function HomePage() {
