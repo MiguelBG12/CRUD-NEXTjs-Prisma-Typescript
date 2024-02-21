@@ -61,4 +61,14 @@ function NewPage({ params }: { params: { id: string } }) {
                   focus:border-sky-300 text-black block w-full"
           {...register("description")}
         ></textarea>
-        
+        <div className="flex justify-between">
+          <button
+            type="submit"
+            className="bg-sky-500 px-3 py-1 rounded-md text-while mt-2"
+          >{params.id ? "Update" : "Create"}
+          </button>
+
+          <button
+            type= "button"
+            className="bg-red-500 px-3 py-1 rounded-md text-while mt-2"
+            
