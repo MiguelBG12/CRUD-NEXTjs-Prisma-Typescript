@@ -1,14 +1,14 @@
-import {prisma} from '@/libs/prisma'
-import TaskCard from '@/components/TaskCard'
+import {prisma} from '@/libs/prisma';
+import TaskCard from '@/components/TaskCard';
 
 async function loadTasks() {
-  return await prisma.task.findMany()
+  return await prisma.task.findMany();
 }
 
 export const dynamic = 'force-dynamic'
 
 async function HomePage() {
-  const tasks = await loadTasks()
+  const tasks = await loadTasks();
 
   return (
     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5'>
@@ -16,7 +16,7 @@ async function HomePage() {
         <TaskCard task={task} key={task.id} />
       ))}
     </div>
-  )
+  );
 }
 
 export default HomePage
