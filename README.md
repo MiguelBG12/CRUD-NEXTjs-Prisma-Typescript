@@ -11,7 +11,7 @@ This is an application where we can Create, Read, Update and Delete (CRUD) tasks
 
 ## See live example
 
-[Link](https://nextjs-prisma-typescript-sand.vercel.app/)
+- [Link](https://nextjs-prisma-typescript-sand.vercel.app/)
 
 
 ## Hiring:
